@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\entregable\\entregable1\\",
+  "WorkspaceRootPath": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|e:\\entregable\\entregable1\\entregable1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|solutionrelative:entregable1\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|c:\\users\\lienad\\desktop\\entregable\\entregable1\\entregable1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|solutionrelative:entregable1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|solutionrelative:entregable1\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\enemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|solutionrelative:entregable1\\enemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|solutionrelative:entregable1\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A889614-B8C0-42AB-A0C6-77E8156F07EB}|entregable1\\entregable1.csproj|solutionrelative:entregable1\\armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Combatsystem.cs",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Combatsystem.cs",
+              "RelativeDocumentMoniker": "entregable1\\Combatsystem.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Combatsystem.cs",
+              "RelativeToolTip": "entregable1\\Combatsystem.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAnwCwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:56:38.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "sword.cs",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\sword.cs",
+              "RelativeDocumentMoniker": "entregable1\\sword.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\sword.cs",
+              "RelativeToolTip": "entregable1\\sword.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:56:15.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemies.cs",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Enemies.cs",
+              "RelativeDocumentMoniker": "entregable1\\Enemies.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Enemies.cs",
+              "RelativeToolTip": "entregable1\\Enemies.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAkwFIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:55:43.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Character.cs",
+              "RelativeDocumentMoniker": "entregable1\\Character.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Character.cs",
+              "RelativeToolTip": "entregable1\\Character.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:55:01.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "armor.cs",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\armor.cs",
+              "RelativeDocumentMoniker": "entregable1\\armor.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\armor.cs",
+              "RelativeToolTip": "entregable1\\armor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:54:08.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\entregable\\entregable1\\entregable1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Program.cs",
               "RelativeDocumentMoniker": "entregable1\\Program.cs",
-              "ToolTip": "E:\\entregable\\entregable1\\entregable1\\Program.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\Program.cs",
               "RelativeToolTip": "entregable1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T12:11:55.726Z",
               "EditorCaption": ""

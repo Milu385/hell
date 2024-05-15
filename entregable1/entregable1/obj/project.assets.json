@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\entregable\\entregable1\\entregable1\\entregable1.csproj",
+      "projectUniqueName": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\entregable1.csproj",
       "projectName": "entregable1",
-      "projectPath": "E:\\entregable\\entregable1\\entregable1\\entregable1.csproj",
+      "projectPath": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\entregable1.csproj",
       "packagesPath": "C:\\Users\\LienaD\\.nuget\\packages\\",
-      "outputPath": "E:\\entregable\\entregable1\\entregable1\\obj\\",
+      "outputPath": "C:\\Users\\LienaD\\Desktop\\entregable\\entregable1\\entregable1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LienaD\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

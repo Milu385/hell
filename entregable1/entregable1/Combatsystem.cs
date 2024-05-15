@@ -46,6 +46,8 @@ namespace entregable1
 
             for (double i = personaje.ShowCharacterLife(); i != 0;)
             {
+                //Console.Clear(); !! hay que hacerlo mas lento para leer quien pego y quien no
+
 
 
                 Console.WriteLine(personaje.name + " | vida = " + personaje.ShowCharacterLife());
@@ -59,6 +61,8 @@ namespace entregable1
                     }
                     else
                     {
+                        personaje.getXp(Enemies[j].getExperience());
+
                         Console.WriteLine(j + " ha muerto");
                     }
                 }
@@ -81,7 +85,7 @@ namespace entregable1
                     Int32.TryParse(inputObjetivo, out objetivo);
 
                     Console.WriteLine("\n");
-                    Enemies[objetivo].TakeDamageEnemy(personaje.Attack());
+                    Enemies[objetivo].TakeDamageEnemy(personaje.Attack());      // controlar errores 
 
                 }
                 if (number == 2)

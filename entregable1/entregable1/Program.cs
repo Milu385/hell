@@ -8,6 +8,9 @@ namespace entregable1
         static void Main(string[] args)
         {
 
+
+            
+
             int number;
 
             Console.WriteLine("eliga un nombre para su personaje");
@@ -15,6 +18,13 @@ namespace entregable1
             string nombre = Console.ReadLine();
 
             Character character = new Character(nombre);
+
+            character.levelUp += (sender, e) =>
+            {
+                Console.WriteLine(character.name + "ha subido de nivel");
+
+                character.xpCap = character.xpCap * 2;
+            };
 
 
             do

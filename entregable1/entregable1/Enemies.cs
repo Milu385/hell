@@ -9,6 +9,7 @@ namespace entregable1
 
     public interface Ienemies
     {
+        int getExperience();
         void TakeDamageEnemy(double Damage);
 
         double DamageEnemy();
@@ -24,7 +25,9 @@ namespace entregable1
     {
         private double lifeEnemy;
 
-        Random random = new Random(); 
+        Random random = new Random();
+
+        private int xp = 2;
 
         public Goblin(double lifeEnemy)
         {
@@ -37,8 +40,8 @@ namespace entregable1
             long HitOrMiss = random.NextInt64(1, 3);
 
             if (HitOrMiss == 1) { return 2; }
-            else { Console.WriteLine("goblin misses"); return 0; }  
-   
+            else { Console.WriteLine("goblin misses"); return 0; }
+
         }
 
         void Ienemies.TakeDamageEnemy(double Damage)
@@ -48,9 +51,15 @@ namespace entregable1
 
         double Ienemies.Showlife()
         {
-            return lifeEnemy; 
+            return lifeEnemy;
         }
-        
+
+        public int getExperience()
+        {
+            return xp;
+        }
+
+
 
 }
 
@@ -62,6 +71,8 @@ namespace entregable1
             private double lifeEnemy;
 
             Random random = new Random();
+
+            private int xp = 4;
 
             public Vampire(double lifeEnemy)
             {
@@ -88,7 +99,14 @@ namespace entregable1
             return lifeEnemy;
             }
 
-        }
+            public int getExperience()
+            {
+            return xp;
+            }
+
+
 
     }
+
+}
 
