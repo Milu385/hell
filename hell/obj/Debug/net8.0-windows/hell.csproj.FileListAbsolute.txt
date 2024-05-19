@@ -1,0 +1,16 @@
+C:\Users\LienaD\Desktop\hell\hell\bin\Debug\net8.0-windows\hell.exe
+C:\Users\LienaD\Desktop\hell\hell\bin\Debug\net8.0-windows\hell.deps.json
+C:\Users\LienaD\Desktop\hell\hell\bin\Debug\net8.0-windows\hell.runtimeconfig.json
+C:\Users\LienaD\Desktop\hell\hell\bin\Debug\net8.0-windows\hell.dll
+C:\Users\LienaD\Desktop\hell\hell\bin\Debug\net8.0-windows\hell.pdb
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.Form1.resources
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.csproj.GenerateResource.cache
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.AssemblyInfoInputs.cache
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.AssemblyInfo.cs
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.csproj.CoreCompileInputs.cache
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.dll
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\refint\hell.dll
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.pdb
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.genruntimeconfig.cache
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\ref\hell.dll
