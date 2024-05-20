@@ -16,13 +16,18 @@ namespace hell
 
            Character character = new Character(textBoxName.Text);
 
-            Form2 form2 = new Form2(character);
+            Form2 form2 = new Form2();
+
+            Combatsystem combatsystem = new Combatsystem();
 
             // Show Form2
             form2.Show();
 
             // Hide Form1 (optional)
             this.Hide();
+
+            combatsystem.CombatMode(character);
+
 
         }
 

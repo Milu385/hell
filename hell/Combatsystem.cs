@@ -46,6 +46,8 @@ namespace entregable1
         public void CombatMode(Character personaje)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
         {
 
+
+
             for (double i = personaje.ShowCharacterLife(); i != 0;)
             {
 

@@ -4,20 +4,12 @@ namespace hell
 {
     public partial class Form2 : Form
     {
-
-        public Character hero;
-
-        public Form2(Character character)
+        public Form2()
         {
-            hero = character;
-
-            Combatsystem combatsystem = new Combatsystem();
-
             InitializeComponent();
-
-            
-
         }
+
+        
 
     }
 }
