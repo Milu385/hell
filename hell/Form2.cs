@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using entregable1;
 
 namespace hell
 {
     public partial class Form2 : Form
     {
-        public Form2()
+
+        public Character hero;
+
+        public Form2(Character character)
         {
+            hero = character;
+
+            Combatsystem combatsystem = new Combatsystem();
+
             InitializeComponent();
+
+            
+
         }
+
     }
 }

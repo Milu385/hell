@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button_play = new Button();
             textBoxName = new TextBox();
             SuspendLayout();
             // 
             // button_play
             // 
-            button_play.Location = new Point(583, 300);
+            button_play.BackgroundImageLayout = ImageLayout.Stretch;
+            button_play.Location = new Point(94, 269);
             button_play.Name = "button_play";
             button_play.Size = new Size(132, 84);
             button_play.TabIndex = 0;
@@ -44,20 +46,25 @@
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(478, 65);
+            textBoxName.BackColor = SystemColors.ButtonFace;
+            textBoxName.Location = new Point(41, 137);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(237, 23);
             textBoxName.TabIndex = 1;
+            textBoxName.Text = "name";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(763, 416);
             Controls.Add(textBoxName);
             Controls.Add(button_play);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Form1";
-            Text = "Form1";
+            Text = "hell";
             ResumeLayout(false);
             PerformLayout();
         }

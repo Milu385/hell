@@ -1,7 +1,11 @@
+using entregable1;
+
 namespace hell
 {
     public partial class Form1 : Form
     {
+
+
         public Form1()
         {
             InitializeComponent();
@@ -10,8 +14,9 @@ namespace hell
         private void button_play_Click(object sender, EventArgs e)
         {
 
-            
-            Form2 form2 = new Form2();
+           Character character = new Character(textBoxName.Text);
+
+            Form2 form2 = new Form2(character);
 
             // Show Form2
             form2.Show();
@@ -20,5 +25,7 @@ namespace hell
             this.Hide();
 
         }
+
     }
+
 }
