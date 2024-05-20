@@ -6,5 +6,19 @@ namespace hell
         {
             InitializeComponent();
         }
+
+        private void button_play_Click(object sender, EventArgs e)
+        {
+
+            
+            Form2 form2 = new Form2();
+
+            // Show Form2
+            form2.Show();
+
+            // Hide Form1 (optional)
+            this.Hide();
+
+        }
     }
 }

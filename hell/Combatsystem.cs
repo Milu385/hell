@@ -48,9 +48,7 @@ namespace entregable1
 
             for (double i = personaje.ShowCharacterLife(); i != 0;)
             {
-                Thread.Sleep(1000);
 
-                Console.Clear();
 
                 Console.WriteLine(personaje.name + " | vida = " + personaje.ShowCharacterLife());
                 Console.WriteLine("\n ---------------------------------------------------------------------------------------");

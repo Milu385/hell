@@ -14,3 +14,5 @@ C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\refint\hell.dll
 C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.pdb
 C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.genruntimeconfig.cache
 C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\ref\hell.dll
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.Form2.resources
+C:\Users\LienaD\Desktop\hell\hell\obj\Debug\net8.0-windows\hell.sourcelink.json
