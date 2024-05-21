@@ -36,9 +36,9 @@
             // button_play
             // 
             button_play.BackgroundImageLayout = ImageLayout.Stretch;
-            button_play.Location = new Point(94, 269);
+            button_play.Location = new Point(562, 286);
             button_play.Name = "button_play";
-            button_play.Size = new Size(132, 84);
+            button_play.Size = new Size(133, 69);
             button_play.TabIndex = 0;
             button_play.Text = "play";
             button_play.UseVisualStyleBackColor = true;
@@ -47,11 +47,10 @@
             // textBoxName
             // 
             textBoxName.BackColor = SystemColors.ButtonFace;
-            textBoxName.Location = new Point(41, 137);
+            textBoxName.Location = new Point(75, 296);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(237, 23);
+            textBoxName.Size = new Size(197, 23);
             textBoxName.TabIndex = 1;
-            textBoxName.Text = "name";
             // 
             // Form1
             // 

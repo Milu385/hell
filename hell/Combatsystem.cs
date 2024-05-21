@@ -1,7 +1,9 @@
-﻿using System;
+﻿using hell;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -43,29 +45,31 @@ namespace entregable1
 
         }
 
-        public void CombatMode(Character personaje)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
+        public void CombatMode(Character personaje, Form2 form)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
         {
-
-
-
+       
             for (double i = personaje.ShowCharacterLife(); i != 0;)
             {
 
+                form.heroName.Text = "";
+                form.EnemyInfo.Text = "";
 
-                Console.WriteLine(personaje.name + " | vida = " + personaje.ShowCharacterLife());
-                Console.WriteLine("\n ---------------------------------------------------------------------------------------");
+
+                form.heroName.Text = personaje.name + " | vida = " + personaje.ShowCharacterLife();
+
 
                 for (int j = 0; j < Enemies.Count; j++)
                 {
+
                     if (Enemies[j].Showlife() > 0)
                     {
-                        Console.WriteLine("enemigo " + j + " " + Enemies[j].GetType().Name + " || vida = " + Enemies[j].Showlife());
+                        form.EnemyInfo.Text = ("enemigo " + j + " " + Enemies[j].GetType().Name + " || vida = " + Enemies[j].Showlife());
                     }
                     else
                     {
                         personaje.getXp(Enemies[j].getExperience());
-                        Console.WriteLine("has ganado " + Enemies[j].getExperience()+ " puntos de experiencia");
-                        Console.WriteLine(j + " ha muerto");
+                        form.EnemyInfo.Text = ("has ganado " + Enemies[j].getExperience()+ " puntos de experiencia");
+                        form.EnemyInfo.Text = (j + " ha muerto");
                     }
                 }
 

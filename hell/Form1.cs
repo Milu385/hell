@@ -26,7 +26,7 @@ namespace hell
             // Hide Form1 (optional)
             this.Hide();
 
-            combatsystem.CombatMode(character);
+            combatsystem.CombatMode(character, form2);
 
 
         }
