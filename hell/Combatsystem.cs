@@ -46,6 +46,19 @@ namespace entregable1
 
         }
 
+
+        public void DamageEnemy(Character character, int x)
+        {
+            if (x <= Enemies.Count)
+            {
+                Enemies[x].TakeDamageEnemy(character.Attack());
+            }
+            else { }
+
+        }
+
+
+
         public async void CombatMode(Character personaje, Form2 form)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
         {
             Dictionary<int, PictureBox> goblinImage = new();

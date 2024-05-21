@@ -47,6 +47,9 @@
             EnemyInfo3 = new TextBox();
             EnemyInfo4 = new TextBox();
             EnemyInfo5 = new TextBox();
+            textboxTarget = new TextBox();
+            labelTarget = new Label();
+            buttonConfirmAttack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin3).BeginInit();
@@ -200,7 +203,7 @@
             // buttonAttack
             // 
             buttonAttack.Enabled = false;
-            buttonAttack.Location = new Point(27, 326);
+            buttonAttack.Location = new Point(12, 280);
             buttonAttack.Name = "buttonAttack";
             buttonAttack.Size = new Size(125, 86);
             buttonAttack.TabIndex = 21;
@@ -211,7 +214,7 @@
             // buttonHeal
             // 
             buttonHeal.Enabled = false;
-            buttonHeal.Location = new Point(225, 326);
+            buttonHeal.Location = new Point(236, 280);
             buttonHeal.Name = "buttonHeal";
             buttonHeal.Size = new Size(125, 86);
             buttonHeal.TabIndex = 22;
@@ -254,12 +257,45 @@
             EnemyInfo5.Size = new Size(215, 73);
             EnemyInfo5.TabIndex = 26;
             // 
+            // textboxTarget
+            // 
+            textboxTarget.Enabled = false;
+            textboxTarget.Location = new Point(12, 400);
+            textboxTarget.Name = "textboxTarget";
+            textboxTarget.Size = new Size(125, 23);
+            textboxTarget.TabIndex = 27;
+            // 
+            // labelTarget
+            // 
+            labelTarget.AutoSize = true;
+            labelTarget.Location = new Point(12, 382);
+            labelTarget.Name = "labelTarget";
+            labelTarget.Size = new Size(39, 15);
+            labelTarget.TabIndex = 28;
+            labelTarget.Text = "Target";
+            labelTarget.Visible = false;
+            // 
+            // buttonConfirmAttack
+            // 
+            buttonConfirmAttack.Enabled = false;
+            buttonConfirmAttack.Location = new Point(143, 399);
+            buttonConfirmAttack.Name = "buttonConfirmAttack";
+            buttonConfirmAttack.Size = new Size(75, 23);
+            buttonConfirmAttack.TabIndex = 29;
+            buttonConfirmAttack.Text = "Confirm";
+            buttonConfirmAttack.UseVisualStyleBackColor = true;
+            buttonConfirmAttack.Visible = false;
+            buttonConfirmAttack.Click += buttonConfirmAttack_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(821, 449);
+            Controls.Add(buttonConfirmAttack);
+            Controls.Add(labelTarget);
+            Controls.Add(textboxTarget);
             Controls.Add(EnemyInfo5);
             Controls.Add(EnemyInfo4);
             Controls.Add(EnemyInfo3);
@@ -314,5 +350,8 @@
         public TextBox EnemyInfo3;
         public TextBox EnemyInfo4;
         public TextBox EnemyInfo5;
+        private TextBox textboxTarget;
+        private Label labelTarget;
+        private Button buttonConfirmAttack;
     }
 }

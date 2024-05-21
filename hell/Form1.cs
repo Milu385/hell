@@ -18,7 +18,7 @@ namespace hell
 
             Combatsystem combatsystem = new Combatsystem();
 
-            Form2 form2 = new Form2(combatsystem);
+            Form2 form2 = new Form2(combatsystem, character);
 
             // Show Form2
             form2.Show();
