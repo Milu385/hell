@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\LienaD\\Desktop\\hell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\enemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\enemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form1.cs",
               "RelativeDocumentMoniker": "hell\\Form1.cs",
               "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form1.cs",
               "RelativeToolTip": "hell\\Form1.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T00:26:43.936Z",
               "IsPinned": true,
@@ -69,6 +57,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.cs",
+              "RelativeDocumentMoniker": "hell\\Form2.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "hell\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:20:39.877Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form1.cs",
+              "RelativeDocumentMoniker": "hell\\Form1.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "hell\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T19:14:44.595Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "hell\\Form1.Designer.cs",
@@ -81,66 +93,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form2.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.Designer.cs",
-              "RelativeDocumentMoniker": "hell\\Form2.Designer.cs",
-              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.Designer.cs",
-              "RelativeToolTip": "hell\\Form2.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOcAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T03:39:01.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.cs",
               "RelativeDocumentMoniker": "hell\\Form2.cs",
               "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.cs",
               "RelativeToolTip": "hell\\Form2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T02:05:17.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.cs",
-              "RelativeDocumentMoniker": "hell\\Form2.cs",
-              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "hell\\Form2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T01:15:42.648Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Character.cs",
-              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Character.cs",
-              "RelativeDocumentMoniker": "hell\\Character.cs",
-              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Character.cs",
-              "RelativeToolTip": "hell\\Character.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T01:14:54.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Enemies.cs",
-              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Enemies.cs",
-              "RelativeDocumentMoniker": "hell\\Enemies.cs",
-              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Enemies.cs",
-              "RelativeToolTip": "hell\\Enemies.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA9wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T22:46:57.461Z",
               "EditorCaption": ""
             },
             {
@@ -151,22 +112,10 @@
               "RelativeDocumentMoniker": "hell\\Combatsystem.cs",
               "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Combatsystem.cs",
               "RelativeToolTip": "hell\\Combatsystem.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAgwDcAAAAAAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAowGoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T22:46:56.838Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Program.cs",
-              "RelativeDocumentMoniker": "hell\\Program.cs",
-              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Program.cs",
-              "RelativeToolTip": "hell\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T22:46:53.973Z"
             }
           ]
         }

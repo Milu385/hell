@@ -17,6 +17,8 @@ namespace entregable1
 
         List<Ienemies> Enemies;
 
+        public TaskCompletionSource<bool> buttonActionClick;
+
 
         Random random = new Random();
 
@@ -45,17 +47,20 @@ namespace entregable1
 
         }
 
-        public void CombatMode(Character personaje, Form2 form)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
+        public async void CombatMode(Character personaje, Form2 form)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
         {
+            
        
-            for (double i = personaje.ShowCharacterLife(); i != 0;)
+            for (double i = personaje.ShowCharacterLife(); i > 0;)
             {
 
-                form.heroName.Text = "";
+                buttonActionClick = new TaskCompletionSource<bool>();
+
+                form.heroInfo.Text = "";
                 form.EnemyInfo.Text = "";
 
 
-                form.heroName.Text = personaje.name + " | vida = " + personaje.ShowCharacterLife();
+                form.heroInfo.Text = personaje.name + " | vida = " + personaje.ShowCharacterLife();
 
 
                 for (int j = 0; j < Enemies.Count; j++)
@@ -68,40 +73,22 @@ namespace entregable1
                     else
                     {
                         personaje.getXp(Enemies[j].getExperience());
-                        form.EnemyInfo.Text = ("has ganado " + Enemies[j].getExperience()+ " puntos de experiencia");
+                        
                         form.EnemyInfo.Text = (j + " ha muerto");
                     }
                 }
 
                 // personaje ataque
 
-                Console.WriteLine("\n 1. atacar \n 2.curar \n 0. esperar");
+                form.buttonAttack.Enabled = true;
+                form.buttonHeal.Enabled = true;
 
-                string inputDesicion = Console.ReadLine();
-                int number;
-                Int32.TryParse(inputDesicion, out number);
+                await buttonActionClick.Task;
 
+                form.buttonAttack.Enabled = false;
+                form.buttonHeal.Enabled = false;
 
-                if (number == 1)
-                {
-                    Console.WriteLine(" objetivo");
-
-                    string inputObjetivo = Console.ReadLine();
-                    int objetivo;
-                    Int32.TryParse(inputObjetivo, out objetivo);
-
-                    Console.WriteLine("\n");
-                    Enemies[objetivo].TakeDamageEnemy(personaje.Attack()); // controlar errores 
-
-                }
-                if (number == 2)
-                {
-                    double heal = random.NextInt64(0, 25);
-                    Console.WriteLine("te curas " + heal + " de vida");
-                    personaje.Heal(heal);
-                }
-
-                else { }
+                
 
 
                 //turno del enemigo
@@ -111,8 +98,8 @@ namespace entregable1
 
                 if (x <= Enemies.Count)
                 {
-                    
-                    Console.WriteLine("\n" + Enemies[x].GetType().Name + " ataca");
+
+                    form.EnemyInfo.Text = ("\n" + Enemies[x].GetType().Name + " ataca");
                     personaje.DamageTaken(Enemies[x].DamageEnemy());
                     x++;
 
@@ -131,7 +118,8 @@ namespace entregable1
 
                 if (win < 0)
                 {
-                    Console.WriteLine("combate finalizado | has ganado!");
+                    form.heroInfo.Text = "";
+                    form.heroInfo.Text = ("combate finalizado | has ganado!");
                     break;
                 }
                 else { }

@@ -31,26 +31,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             pictureGoblin1 = new PictureBox();
             EnemyInfo = new TextBox();
-            heroName = new TextBox();
+            heroInfo = new TextBox();
             picturegoblin2 = new PictureBox();
             pictureGoblin3 = new PictureBox();
             pictureGoblin4 = new PictureBox();
             pictureGoblin5 = new PictureBox();
             pictureVampire1 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            pictureVampire2 = new PictureBox();
+            pictureVampire3 = new PictureBox();
+            pictureVampire4 = new PictureBox();
+            pictureVampire5 = new PictureBox();
+            buttonAttack = new Button();
+            buttonHeal = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picturegoblin2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureVampire1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire5).BeginInit();
             SuspendLayout();
             // 
             // pictureGoblin1
@@ -74,14 +76,14 @@
             EnemyInfo.Size = new Size(215, 378);
             EnemyInfo.TabIndex = 6;
             // 
-            // heroName
+            // heroInfo
             // 
-            heroName.Location = new Point(27, 34);
-            heroName.Multiline = true;
-            heroName.Name = "heroName";
-            heroName.ReadOnly = true;
-            heroName.Size = new Size(349, 152);
-            heroName.TabIndex = 11;
+            heroInfo.Location = new Point(27, 34);
+            heroInfo.Multiline = true;
+            heroInfo.Name = "heroInfo";
+            heroInfo.ReadOnly = true;
+            heroInfo.Size = new Size(349, 152);
+            heroInfo.TabIndex = 11;
             // 
             // picturegoblin2
             // 
@@ -143,53 +145,74 @@
             pictureVampire1.TabStop = false;
             pictureVampire1.Visible = false;
             // 
-            // pictureBox1
+            // pictureVampire2
             // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(405, 113);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(79, 73);
-            pictureBox1.TabIndex = 17;
-            pictureBox1.TabStop = false;
-            pictureBox1.Visible = false;
+            pictureVampire2.BackgroundImage = (Image)resources.GetObject("pictureVampire2.BackgroundImage");
+            pictureVampire2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureVampire2.InitialImage = null;
+            pictureVampire2.Location = new Point(405, 113);
+            pictureVampire2.Name = "pictureVampire2";
+            pictureVampire2.Size = new Size(79, 73);
+            pictureVampire2.TabIndex = 17;
+            pictureVampire2.TabStop = false;
+            pictureVampire2.Visible = false;
             // 
-            // pictureBox2
+            // pictureVampire3
             // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.InitialImage = null;
-            pictureBox2.Location = new Point(405, 192);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(79, 73);
-            pictureBox2.TabIndex = 18;
-            pictureBox2.TabStop = false;
-            pictureBox2.Visible = false;
+            pictureVampire3.BackgroundImage = (Image)resources.GetObject("pictureVampire3.BackgroundImage");
+            pictureVampire3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureVampire3.InitialImage = null;
+            pictureVampire3.Location = new Point(405, 192);
+            pictureVampire3.Name = "pictureVampire3";
+            pictureVampire3.Size = new Size(79, 73);
+            pictureVampire3.TabIndex = 18;
+            pictureVampire3.TabStop = false;
+            pictureVampire3.Visible = false;
             // 
-            // pictureBox3
+            // pictureVampire4
             // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.InitialImage = null;
-            pictureBox3.Location = new Point(405, 271);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(79, 73);
-            pictureBox3.TabIndex = 19;
-            pictureBox3.TabStop = false;
-            pictureBox3.Visible = false;
+            pictureVampire4.BackgroundImage = (Image)resources.GetObject("pictureVampire4.BackgroundImage");
+            pictureVampire4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureVampire4.InitialImage = null;
+            pictureVampire4.Location = new Point(405, 271);
+            pictureVampire4.Name = "pictureVampire4";
+            pictureVampire4.Size = new Size(79, 73);
+            pictureVampire4.TabIndex = 19;
+            pictureVampire4.TabStop = false;
+            pictureVampire4.Visible = false;
             // 
-            // pictureBox4
+            // pictureVampire5
             // 
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.InitialImage = null;
-            pictureBox4.Location = new Point(405, 350);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(79, 73);
-            pictureBox4.TabIndex = 20;
-            pictureBox4.TabStop = false;
-            pictureBox4.Visible = false;
+            pictureVampire5.BackgroundImage = (Image)resources.GetObject("pictureVampire5.BackgroundImage");
+            pictureVampire5.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureVampire5.InitialImage = null;
+            pictureVampire5.Location = new Point(405, 350);
+            pictureVampire5.Name = "pictureVampire5";
+            pictureVampire5.Size = new Size(79, 73);
+            pictureVampire5.TabIndex = 20;
+            pictureVampire5.TabStop = false;
+            pictureVampire5.Visible = false;
+            // 
+            // buttonAttack
+            // 
+            buttonAttack.Enabled = false;
+            buttonAttack.Location = new Point(27, 326);
+            buttonAttack.Name = "buttonAttack";
+            buttonAttack.Size = new Size(125, 86);
+            buttonAttack.TabIndex = 21;
+            buttonAttack.Text = "Attack";
+            buttonAttack.UseVisualStyleBackColor = true;
+            buttonAttack.Click += buttonAttack_Click;
+            // 
+            // buttonHeal
+            // 
+            buttonHeal.Enabled = false;
+            buttonHeal.Location = new Point(225, 326);
+            buttonHeal.Name = "buttonHeal";
+            buttonHeal.Size = new Size(125, 86);
+            buttonHeal.TabIndex = 22;
+            buttonHeal.Text = "heal";
+            buttonHeal.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -197,16 +220,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(821, 449);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(buttonHeal);
+            Controls.Add(buttonAttack);
+            Controls.Add(pictureVampire5);
+            Controls.Add(pictureVampire4);
+            Controls.Add(pictureVampire3);
+            Controls.Add(pictureVampire2);
             Controls.Add(pictureVampire1);
             Controls.Add(pictureGoblin5);
             Controls.Add(pictureGoblin4);
             Controls.Add(pictureGoblin3);
             Controls.Add(picturegoblin2);
-            Controls.Add(heroName);
+            Controls.Add(heroInfo);
             Controls.Add(EnemyInfo);
             Controls.Add(pictureGoblin1);
             Name = "Form2";
@@ -217,10 +242,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureGoblin4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureVampire1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVampire5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -229,15 +254,17 @@
 
         public PictureBox pictureGoblin1;
         public TextBox EnemyInfo;
-        public TextBox heroName;
+        public TextBox heroInfo;
         public PictureBox picturegoblin2;
         public PictureBox pictureGoblin3;
         public PictureBox pictureGoblin4;
         public PictureBox pictureGoblin5;
         public PictureBox pictureVampire1;
-        public PictureBox pictureBox1;
-        public PictureBox pictureBox2;
-        public PictureBox pictureBox3;
-        public PictureBox pictureBox4;
+        public PictureBox pictureVampire2;
+        public PictureBox pictureVampire3;
+        public PictureBox pictureVampire4;
+        public PictureBox pictureVampire5;
+        public Button buttonAttack;
+        public Button buttonHeal;
     }
 }
