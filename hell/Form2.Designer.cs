@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             pictureGoblin1 = new PictureBox();
-            EnemyInfo = new TextBox();
+            EnemyInfo1 = new TextBox();
             heroInfo = new TextBox();
-            picturegoblin2 = new PictureBox();
+            pictureGoblin2 = new PictureBox();
             pictureGoblin3 = new PictureBox();
             pictureGoblin4 = new PictureBox();
             pictureGoblin5 = new PictureBox();
@@ -43,8 +43,12 @@
             pictureVampire5 = new PictureBox();
             buttonAttack = new Button();
             buttonHeal = new Button();
+            EnemyInfo2 = new TextBox();
+            EnemyInfo3 = new TextBox();
+            EnemyInfo4 = new TextBox();
+            EnemyInfo5 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picturegoblin2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureGoblin2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin5).BeginInit();
@@ -67,35 +71,35 @@
             pictureGoblin1.TabStop = false;
             pictureGoblin1.Visible = false;
             // 
-            // EnemyInfo
+            // EnemyInfo1
             // 
-            EnemyInfo.Location = new Point(584, 34);
-            EnemyInfo.Multiline = true;
-            EnemyInfo.Name = "EnemyInfo";
-            EnemyInfo.ReadOnly = true;
-            EnemyInfo.Size = new Size(215, 378);
-            EnemyInfo.TabIndex = 6;
+            EnemyInfo1.Location = new Point(584, 34);
+            EnemyInfo1.Multiline = true;
+            EnemyInfo1.Name = "EnemyInfo1";
+            EnemyInfo1.ReadOnly = true;
+            EnemyInfo1.Size = new Size(215, 73);
+            EnemyInfo1.TabIndex = 6;
             // 
             // heroInfo
             // 
-            heroInfo.Location = new Point(27, 34);
+            heroInfo.Location = new Point(12, 34);
             heroInfo.Multiline = true;
             heroInfo.Name = "heroInfo";
             heroInfo.ReadOnly = true;
             heroInfo.Size = new Size(349, 152);
             heroInfo.TabIndex = 11;
             // 
-            // picturegoblin2
+            // pictureGoblin2
             // 
-            picturegoblin2.BackgroundImage = (Image)resources.GetObject("picturegoblin2.BackgroundImage");
-            picturegoblin2.BackgroundImageLayout = ImageLayout.Stretch;
-            picturegoblin2.InitialImage = null;
-            picturegoblin2.Location = new Point(490, 113);
-            picturegoblin2.Name = "picturegoblin2";
-            picturegoblin2.Size = new Size(79, 73);
-            picturegoblin2.TabIndex = 12;
-            picturegoblin2.TabStop = false;
-            picturegoblin2.Visible = false;
+            pictureGoblin2.BackgroundImage = (Image)resources.GetObject("pictureGoblin2.BackgroundImage");
+            pictureGoblin2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureGoblin2.InitialImage = null;
+            pictureGoblin2.Location = new Point(490, 113);
+            pictureGoblin2.Name = "pictureGoblin2";
+            pictureGoblin2.Size = new Size(79, 73);
+            pictureGoblin2.TabIndex = 12;
+            pictureGoblin2.TabStop = false;
+            pictureGoblin2.Visible = false;
             // 
             // pictureGoblin3
             // 
@@ -214,12 +218,52 @@
             buttonHeal.Text = "heal";
             buttonHeal.UseVisualStyleBackColor = true;
             // 
+            // EnemyInfo2
+            // 
+            EnemyInfo2.Location = new Point(584, 113);
+            EnemyInfo2.Multiline = true;
+            EnemyInfo2.Name = "EnemyInfo2";
+            EnemyInfo2.ReadOnly = true;
+            EnemyInfo2.Size = new Size(215, 73);
+            EnemyInfo2.TabIndex = 23;
+            // 
+            // EnemyInfo3
+            // 
+            EnemyInfo3.Location = new Point(584, 192);
+            EnemyInfo3.Multiline = true;
+            EnemyInfo3.Name = "EnemyInfo3";
+            EnemyInfo3.ReadOnly = true;
+            EnemyInfo3.Size = new Size(215, 73);
+            EnemyInfo3.TabIndex = 24;
+            // 
+            // EnemyInfo4
+            // 
+            EnemyInfo4.Location = new Point(584, 271);
+            EnemyInfo4.Multiline = true;
+            EnemyInfo4.Name = "EnemyInfo4";
+            EnemyInfo4.ReadOnly = true;
+            EnemyInfo4.Size = new Size(215, 73);
+            EnemyInfo4.TabIndex = 25;
+            // 
+            // EnemyInfo5
+            // 
+            EnemyInfo5.Location = new Point(584, 350);
+            EnemyInfo5.Multiline = true;
+            EnemyInfo5.Name = "EnemyInfo5";
+            EnemyInfo5.ReadOnly = true;
+            EnemyInfo5.Size = new Size(215, 73);
+            EnemyInfo5.TabIndex = 26;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(821, 449);
+            Controls.Add(EnemyInfo5);
+            Controls.Add(EnemyInfo4);
+            Controls.Add(EnemyInfo3);
+            Controls.Add(EnemyInfo2);
             Controls.Add(buttonHeal);
             Controls.Add(buttonAttack);
             Controls.Add(pictureVampire5);
@@ -230,14 +274,14 @@
             Controls.Add(pictureGoblin5);
             Controls.Add(pictureGoblin4);
             Controls.Add(pictureGoblin3);
-            Controls.Add(picturegoblin2);
+            Controls.Add(pictureGoblin2);
             Controls.Add(heroInfo);
-            Controls.Add(EnemyInfo);
+            Controls.Add(EnemyInfo1);
             Controls.Add(pictureGoblin1);
             Name = "Form2";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)pictureGoblin1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picturegoblin2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureGoblin2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureGoblin5).EndInit();
@@ -253,9 +297,9 @@
         #endregion
 
         public PictureBox pictureGoblin1;
-        public TextBox EnemyInfo;
+        public TextBox EnemyInfo1;
         public TextBox heroInfo;
-        public PictureBox picturegoblin2;
+        public PictureBox pictureGoblin2;
         public PictureBox pictureGoblin3;
         public PictureBox pictureGoblin4;
         public PictureBox pictureGoblin5;
@@ -266,5 +310,9 @@
         public PictureBox pictureVampire5;
         public Button buttonAttack;
         public Button buttonHeal;
+        public TextBox EnemyInfo2;
+        public TextBox EnemyInfo3;
+        public TextBox EnemyInfo4;
+        public TextBox EnemyInfo5;
     }
 }

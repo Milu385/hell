@@ -19,7 +19,6 @@ namespace entregable1
 
         public TaskCompletionSource<bool> buttonActionClick;
 
-
         Random random = new Random();
 
         public Combatsystem()
@@ -49,15 +48,47 @@ namespace entregable1
 
         public async void CombatMode(Character personaje, Form2 form)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
         {
-            
-       
+            Dictionary<int, PictureBox> goblinImage = new();
+
+            goblinImage.Add(0, form.pictureGoblin1);
+            goblinImage.Add(1, form.pictureGoblin2);
+            goblinImage.Add(2, form.pictureGoblin3);
+            goblinImage.Add(3, form.pictureGoblin4);
+            goblinImage.Add(4, form.pictureGoblin5);
+
+            Dictionary<int, PictureBox> vampireImage = new();
+
+            vampireImage.Add(0, form.pictureVampire1);
+            vampireImage.Add(1, form.pictureVampire2);
+            vampireImage.Add(2, form.pictureVampire3);
+            vampireImage.Add(3, form.pictureVampire4);
+            vampireImage.Add(4, form.pictureVampire5);
+
+            Dictionary<int, TextBox> enemyInfoText = new();
+
+            enemyInfoText.Add(0, form.EnemyInfo1);
+            enemyInfoText.Add(1, form.EnemyInfo2);
+            enemyInfoText.Add(2, form.EnemyInfo3);
+            enemyInfoText.Add(3, form.EnemyInfo4);
+            enemyInfoText.Add(4, form.EnemyInfo5);
+
+
+
+
+
+
             for (double i = personaje.ShowCharacterLife(); i > 0;)
             {
 
                 buttonActionClick = new TaskCompletionSource<bool>();
 
                 form.heroInfo.Text = "";
-                form.EnemyInfo.Text = "";
+                form.EnemyInfo1.Text = "";
+                form.EnemyInfo2.Text = "";
+                form.EnemyInfo3.Text = "";
+                form.EnemyInfo4.Text = "";
+                form.EnemyInfo5.Text = "";
+
 
 
                 form.heroInfo.Text = personaje.name + " | vida = " + personaje.ShowCharacterLife();
@@ -68,13 +99,21 @@ namespace entregable1
 
                     if (Enemies[j].Showlife() > 0)
                     {
-                        form.EnemyInfo.Text = ("enemigo " + j + " " + Enemies[j].GetType().Name + " || vida = " + Enemies[j].Showlife());
+
+                        if (Enemies[j].GetType().Name == "Goblin") { goblinImage[j].Visible = true; }
+                        else
+                        {
+                            vampireImage[j].Visible = true;
+                        }
+
+
+                        enemyInfoText[j].Text = ("enemigo " + j + " " + Enemies[j].GetType().Name + " || vida = " + Enemies[j].Showlife());
                     }
                     else
                     {
                         personaje.getXp(Enemies[j].getExperience());
                         
-                        form.EnemyInfo.Text = (j + " ha muerto");
+                        form.EnemyInfo1.Text = (j + " ha muerto");
                     }
                 }
 
@@ -99,7 +138,7 @@ namespace entregable1
                 if (x <= Enemies.Count)
                 {
 
-                    form.EnemyInfo.Text = ("\n" + Enemies[x].GetType().Name + " ataca");
+                    form.EnemyInfo1.Text = ("\n" + Enemies[x].GetType().Name + " ataca");
                     personaje.DamageTaken(Enemies[x].DamageEnemy());
                     x++;
 

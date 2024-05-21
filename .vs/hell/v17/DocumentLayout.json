@@ -15,16 +15,20 @@
       "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|c:\\users\\lienad\\desktop\\hell\\hell\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|C:\\Users\\LienaD\\Desktop\\hell\\hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F6A320C-82C7-4B77-B86A-5157F87A0A85}|hell\\hell.csproj|solutionrelative:hell\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -57,6 +61,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "hell\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.Designer.cs",
+              "RelativeToolTip": "hell\\Form2.Designer.cs",
+              "ViewState": "AQIAACIBAAAAAAAAAAAowDcBAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:19:25.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Form2.cs",
               "RelativeDocumentMoniker": "hell\\Form2.cs",
@@ -112,7 +129,7 @@
               "RelativeDocumentMoniker": "hell\\Combatsystem.cs",
               "ToolTip": "C:\\Users\\LienaD\\Desktop\\hell\\hell\\Combatsystem.cs",
               "RelativeToolTip": "hell\\Combatsystem.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAowGoAAAAUAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAowH0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T22:46:56.838Z",
               "EditorCaption": ""
