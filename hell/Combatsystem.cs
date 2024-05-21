@@ -79,6 +79,7 @@ namespace entregable1
 
             for (double i = personaje.ShowCharacterLife(); i > 0;)
             {
+                Thread.Sleep(1500);
 
                 buttonActionClick = new TaskCompletionSource<bool>();
 
@@ -112,8 +113,8 @@ namespace entregable1
                     else
                     {
                         personaje.getXp(Enemies[j].getExperience());
-                        
-                        form.EnemyInfo1.Text = (j + " ha muerto");
+
+                        enemyInfoText[j].Text = " ha muerto";
                     }
                 }
 
@@ -127,19 +128,17 @@ namespace entregable1
                 form.buttonAttack.Enabled = false;
                 form.buttonHeal.Enabled = false;
 
-                
+
 
 
                 //turno del enemigo
-
 
                 int x = 0;
 
                 if (x <= Enemies.Count)
                 {
-
-                    form.EnemyInfo1.Text = ("\n" + Enemies[x].GetType().Name + " ataca");
                     personaje.DamageTaken(Enemies[x].DamageEnemy());
+
                     x++;
 
                 }
@@ -166,9 +165,6 @@ namespace entregable1
             }
 
             //final combate
-
-            
-
 
 
         }

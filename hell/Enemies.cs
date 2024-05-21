@@ -40,7 +40,7 @@ namespace entregable1
             long HitOrMiss = random.NextInt64(1, 3);
 
             if (HitOrMiss == 1) { return 2; }
-            else { Console.WriteLine("goblin misses"); return 0; }
+            else { return 0; }
 
         }
 

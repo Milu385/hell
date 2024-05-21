@@ -15,7 +15,11 @@ namespace hell
 
         private void buttonAttack_Click(object sender, EventArgs e)
         {
+
+
             combatsystem.buttonActionClick.TrySetResult(true);
+
+
                       
         }
     }
