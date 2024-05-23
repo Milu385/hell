@@ -9,7 +9,7 @@ namespace entregable1
 {
     public class Character
     {
-        private double life = 100;
+        private double life = 50;
 
         public string name;
 
@@ -23,8 +23,6 @@ namespace entregable1
 
         public int xpCap = 10;
             
-
-
         Random random = new Random();
 
         public Character(string name)
@@ -47,8 +45,8 @@ namespace entregable1
         {
             long HitOrMiss = random.NextInt64(1,5);
 
-            if (HitOrMiss == 1) { Console.WriteLine("miss"); return 0; }
-            else { Console.WriteLine("hit"); return espada.damage(); }
+            if (HitOrMiss == 1) { return 0; }
+            else {return espada.damage(); }
 
             
         }
@@ -63,8 +61,9 @@ namespace entregable1
             return life;
         }
 
-        public void Heal(double heal)
+        public void Heal()
         {
+            double heal = Math.Round((random.NextDouble() * (15 - 2) + 2), 0);
             this.life += heal;
         }
 

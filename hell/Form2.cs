@@ -34,7 +34,7 @@ namespace hell
 
             await buttonAttackClick.Task;
 
-            
+
 
         }
 
@@ -51,10 +51,18 @@ namespace hell
             textboxTarget.Visible = false;
             textboxTarget.Enabled = false;
 
-            buttonAttackClick.TrySetResult(true);   
+            buttonAttackClick.TrySetResult(true);
 
             combatsystem.buttonActionClick.TrySetResult(true);
 
+        }
+
+        private void buttonHeal_Click(object sender, EventArgs e)
+        {
+
+            character.Heal();
+            combatsystem.healLimit--;
+            combatsystem.buttonActionClick.TrySetResult(true);
         }
     }
 }

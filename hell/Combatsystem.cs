@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace entregable1
 {
@@ -21,6 +22,8 @@ namespace entregable1
 
         Random random = new Random();
 
+        public int healLimit;
+
         public Combatsystem()
         {
 
@@ -31,7 +34,7 @@ namespace entregable1
 
             for (int i = 0; i < num; i++)
             {
-                long TipoEnemigos = random.NextInt64(1, 3);
+                long TipoEnemigos = random.NextInt64(1, 2);
 
                 if (TipoEnemigos == 1)
                 {
@@ -49,7 +52,7 @@ namespace entregable1
 
         public void DamageEnemy(Character character, int x)
         {
-            if (x <= Enemies.Count)
+            if (x < Enemies.Count)
             {
                 Enemies[x].TakeDamageEnemy(character.Attack());
             }
@@ -86,13 +89,22 @@ namespace entregable1
             enemyInfoText.Add(4, form.EnemyInfo5);
 
 
+            double totalEnemyLife = 0;
 
+            for (int y = 0; y < Enemies.Count; y++)
+            {
+                totalEnemyLife = Enemies[y].Showlife() + totalEnemyLife;
+            }
 
+            healLimit = (int)Math.Ceiling(totalEnemyLife / personaje.ShowCharacterLife());
+
+            
+            
 
 
             for (double i = personaje.ShowCharacterLife(); i > 0;)
             {
-                Thread.Sleep(1500);
+                
 
                 buttonActionClick = new TaskCompletionSource<bool>();
 
@@ -102,7 +114,7 @@ namespace entregable1
                 form.EnemyInfo3.Text = "";
                 form.EnemyInfo4.Text = "";
                 form.EnemyInfo5.Text = "";
-
+                form.buttonHeal.Text = "heal" +"(" + healLimit + ")";   
 
 
                 form.heroInfo.Text = personaje.name + " | vida = " + personaje.ShowCharacterLife();
@@ -132,9 +144,11 @@ namespace entregable1
                 }
 
                 // personaje ataque
-
+                
                 form.buttonAttack.Enabled = true;
-                form.buttonHeal.Enabled = true;
+
+                if(healLimit > 0) {  form.buttonHeal.Enabled = true;}
+                
 
                 await buttonActionClick.Task;
 
@@ -167,17 +181,36 @@ namespace entregable1
                     win = Enemies[y].Showlife() + win;
                 }
 
+
+
                 if (win < 0)
                 {
-                    form.heroInfo.Text = "";
-                    form.heroInfo.Text = ("combate finalizado | has ganado!");
+                    break;
+                }
+                if(personaje.ShowCharacterLife() < 0)
+                {
                     break;
                 }
                 else { }
 
+
+
             }
 
-            //final combate
+            if(personaje.ShowCharacterLife() < 0)
+            {
+                form.heroInfo.Text = "";
+                form.heroInfo.Text = ("game over");
+            }
+            else
+            {
+                Form3 form3 = new Form3(this, personaje);
+
+                form3.Show();
+
+                form.Hide();
+            }
+            
 
 
         }

@@ -220,6 +220,7 @@
             buttonHeal.TabIndex = 22;
             buttonHeal.Text = "heal";
             buttonHeal.UseVisualStyleBackColor = true;
+            buttonHeal.Click += buttonHeal_Click;
             // 
             // EnemyInfo2
             // 
