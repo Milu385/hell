@@ -27,14 +27,14 @@ namespace entregable1
         public Combatsystem()
         {
 
-            long num = random.NextInt64(1, 3); //cambiar cantidad
+            long num = random.NextInt64(1, 6); //cambiar cantidad
 
             Enemies = new List<Ienemies>();
 
 
             for (int i = 0; i < num; i++)
             {
-                long TipoEnemigos = random.NextInt64(1, 2);
+                long TipoEnemigos = random.NextInt64(1, 3);
 
                 if (TipoEnemigos == 1)
                 {
@@ -183,11 +183,11 @@ namespace entregable1
 
 
 
-                if (win < 0)
+                if (win <= 0)
                 {
                     break;
                 }
-                if(personaje.ShowCharacterLife() < 0)
+                if(personaje.ShowCharacterLife() <= 0)
                 {
                     break;
                 }
@@ -197,7 +197,7 @@ namespace entregable1
 
             }
 
-            if(personaje.ShowCharacterLife() < 0)
+            if(personaje.ShowCharacterLife() <= 0)
             {
                 form.heroInfo.Text = "";
                 form.heroInfo.Text = ("game over");
@@ -215,100 +215,46 @@ namespace entregable1
 
         }
 
-        public void reward(Character personaje)
+        public async void reward(Character personaje, Form3 form)
         {
+
+            buttonActionClick = new TaskCompletionSource<bool>();
 
             long reward = random.NextInt64(1, 6);
 
             if (reward == 1)
             {
-                Console.WriteLine("ganaste un macehete, equipar?\n 1. si \n 2.no");
-
-                string inputDesicion = Console.ReadLine();
-                int number;
-                Int32.TryParse(inputDesicion, out number);
-
-                if (number == 1)
-                {
-                    Machete machete = new Machete();
-                    personaje.Equip(machete);
-
-                }
+                form.textBoxReward.Text = ("ganaste un macehete");
+                await buttonActionClick.Task;
+                
 
             }
-            if (reward == 1)
+            
+            if(reward == 2)
             {
-                Console.WriteLine("ganaste un macehete, equipar?\n 1. si \n 2.no");
-
-                string inputDesicion = Console.ReadLine();
-                int number;
-                Int32.TryParse(inputDesicion, out number);
-
-                if (number == 1)
-                {
-                    Machete machete = new Machete();
-                    personaje.Equip(machete);
-
-                }
-                else { }
-
-            }
-            if (reward == 2)
-            {
-                Console.WriteLine("ganaste un claymore, equipar?\n 1. si \n 2.no");
-
-                string inputDesicion = Console.ReadLine();
-                int number;
-                Int32.TryParse(inputDesicion, out number);
-
-                if (number == 1)
-                {
-                    Claymore claymore = new Claymore();
-                    personaje.Equip(claymore);
-
-                }
-                else { }
-
-
+                form.textBoxReward.Text = ("ganaste un claymore");
+                await buttonActionClick.Task;
 
             }
             if (reward == 3)
             {
-                Console.WriteLine("ganaste un armadura de cuero, equipar?\n 1. si \n 2.no");
+                form.textBoxReward.Text = ("ganaste un armadura de cuero");
+                await buttonActionClick.Task;
 
-                string inputDesicion = Console.ReadLine();
-                int number;
-                Int32.TryParse(inputDesicion, out number);
-
-                if (number == 1)
-                {
-                    LeatherArmor armor = new LeatherArmor();
-                    personaje.Equip(armor);
-
-                }
-                else { }
             }
             if (reward == 4)
             {
-                Console.WriteLine("ganaste un armadura de hierro, equipar?\n 1. si \n 2.no");
+                form.textBoxReward.Text = ("ganaste un armadura de hierro");
+                await buttonActionClick.Task;
 
-                string inputDesicion = Console.ReadLine();
-                int number;
-                Int32.TryParse(inputDesicion, out number);
-
-                if (number == 1)
-                {
-                    PlateArmor armor = new PlateArmor();
-                    personaje.Equip(armor);
-
-                }
-                else { }
             }
-            if (reward == 5)
+            else
             {
-                Console.WriteLine("no ganaste ninguna recompensa");
+                form.textBoxReward.Text = ("");
+                form.buttonPlayAgain.Enabled = true;
+                await buttonActionClick.Task;
             }
-
+            
         }
 
     }
