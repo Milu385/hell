@@ -11,12 +11,9 @@ namespace hell
         static void Main()
         {
 
-            Combatsystem combatsystem = new Combatsystem();
-
-
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
-
+            Application.Run(new Form1());           // inicia el form1
+                
         }
     }
 }

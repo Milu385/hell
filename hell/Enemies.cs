@@ -11,9 +11,7 @@ namespace entregable1
     {
         int getExperience();
         void TakeDamageEnemy(double Damage);
-
         double DamageEnemy();
-
         double Showlife();
 
 

@@ -22,19 +22,19 @@ namespace entregable1
 
         Random random = new Random();
 
-        public int healLimit;
+        public int healLimit;                   
 
         public Combatsystem()
         {
 
-            long num = random.NextInt64(1, 6); //cambiar cantidad
+            long num = random.NextInt64(1, 2); 
 
             Enemies = new List<Ienemies>();
 
 
             for (int i = 0; i < num; i++)
             {
-                long TipoEnemigos = random.NextInt64(1, 3);
+                long TipoEnemigos = random.NextInt64(1, 3);                 //crea la lista de enemigos
 
                 if (TipoEnemigos == 1)
                 {
@@ -62,7 +62,7 @@ namespace entregable1
 
 
 
-        public async void CombatMode(Character personaje, Form2 form)  //linQ para balance (dependiendo de la vida maxima cantidad de curacion)
+        public async void CombatMode(Character personaje, Form2 form)  
         {
             Dictionary<int, PictureBox> goblinImage = new();
 
@@ -93,7 +93,8 @@ namespace entregable1
 
             for (int y = 0; y < Enemies.Count; y++)
             {
-                totalEnemyLife = Enemies[y].Showlife() + totalEnemyLife;
+                totalEnemyLife = Enemies[y].Showlife() + totalEnemyLife;                    //define el limite de las curaciones diviendo la suma total de la vida de enemigos
+                                                                                            //entre la vida del personaje y redondea a int
             }
 
             healLimit = (int)Math.Ceiling(totalEnemyLife / personaje.ShowCharacterLife());
@@ -112,38 +113,37 @@ namespace entregable1
                 form.EnemyInfo1.Text = "";
                 form.EnemyInfo2.Text = "";
                 form.EnemyInfo3.Text = "";
-                form.EnemyInfo4.Text = "";
+                form.EnemyInfo4.Text = "";                                                      //reinica los cuadros de texto
                 form.EnemyInfo5.Text = "";
                 form.buttonHeal.Text = "heal" +"(" + healLimit + ")";   
 
 
-                form.heroInfo.Text = personaje.name + " | vida = " + personaje.ShowCharacterLife();
+                form.heroInfo.Text = personaje.name + " | vida = " + personaje.ShowCharacterLife();             //imprime la informacion del personaje
 
 
                 for (int j = 0; j < Enemies.Count; j++)
                 {
 
-                    if (Enemies[j].Showlife() > 0)
+                    if (Enemies[j].Showlife() > 0)      //verifica que el enemigo este vivo
                     {
 
-                        if (Enemies[j].GetType().Name == "Goblin") { goblinImage[j].Visible = true; }
+                        if (Enemies[j].GetType().Name == "Goblin") { goblinImage[j].Visible = true; }       //si el enemigo es goblin, muestra la imagen de goblin           
                         else
                         {
-                            vampireImage[j].Visible = true;
+                            vampireImage[j].Visible = true;                                                     // de otra forma es vampiro
                         }
 
 
-                        enemyInfoText[j].Text = ("enemigo " + j + " " + Enemies[j].GetType().Name + " || vida = " + Enemies[j].Showlife());
+                        enemyInfoText[j].Text = ("enemigo " + j + " " + Enemies[j].GetType().Name + " || vida = " + Enemies[j].Showlife());     //imprime la informacion del enemigo
                     }
                     else
-                    {
-                        personaje.getXp(Enemies[j].getExperience());
+                    {                
 
-                        enemyInfoText[j].Text = " ha muerto";
+                        enemyInfoText[j].Text = " ha muerto";               //de otra forma el enemigo murio entonces se le da experiencia al personaje y se muestra el enemigo muerto
                     }
                 }
 
-                // personaje ataque
+                // turno del personaje
                 
                 form.buttonAttack.Enabled = true;
 
@@ -187,13 +187,11 @@ namespace entregable1
                 {
                     break;
                 }
-                if(personaje.ShowCharacterLife() <= 0)
+                if(personaje.ShowCharacterLife() <= 0)              // verificar condiciones de combate
                 {
                     break;
                 }
                 else { }
-
-
 
             }
 
@@ -225,9 +223,7 @@ namespace entregable1
             if (reward == 1)
             {
                 form.textBoxReward.Text = ("ganaste un macehete");
-                await buttonActionClick.Task;
-                
-
+                await buttonActionClick.Task;             
             }
             
             if(reward == 2)

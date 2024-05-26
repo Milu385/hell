@@ -76,6 +76,7 @@
             // 
             // EnemyInfo1
             // 
+            EnemyInfo1.BackColor = Color.WhiteSmoke;
             EnemyInfo1.Location = new Point(584, 34);
             EnemyInfo1.Multiline = true;
             EnemyInfo1.Name = "EnemyInfo1";
@@ -85,6 +86,7 @@
             // 
             // heroInfo
             // 
+            heroInfo.BackColor = Color.Gainsboro;
             heroInfo.Location = new Point(12, 34);
             heroInfo.Multiline = true;
             heroInfo.Name = "heroInfo";
@@ -202,28 +204,41 @@
             // 
             // buttonAttack
             // 
+            buttonAttack.BackColor = SystemColors.ButtonFace;
+            buttonAttack.BackgroundImage = (Image)resources.GetObject("buttonAttack.BackgroundImage");
+            buttonAttack.BackgroundImageLayout = ImageLayout.Stretch;
             buttonAttack.Enabled = false;
-            buttonAttack.Location = new Point(12, 280);
+            buttonAttack.FlatStyle = FlatStyle.Popup;
+            buttonAttack.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonAttack.Location = new Point(21, 280);
             buttonAttack.Name = "buttonAttack";
-            buttonAttack.Size = new Size(125, 86);
+            buttonAttack.Size = new Size(137, 86);
             buttonAttack.TabIndex = 21;
             buttonAttack.Text = "Attack";
-            buttonAttack.UseVisualStyleBackColor = true;
+            buttonAttack.TextAlign = ContentAlignment.BottomRight;
+            buttonAttack.UseVisualStyleBackColor = false;
             buttonAttack.Click += buttonAttack_Click;
             // 
             // buttonHeal
             // 
+            buttonHeal.BackgroundImage = (Image)resources.GetObject("buttonHeal.BackgroundImage");
+            buttonHeal.BackgroundImageLayout = ImageLayout.Stretch;
             buttonHeal.Enabled = false;
+            buttonHeal.FlatStyle = FlatStyle.Popup;
+            buttonHeal.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonHeal.ForeColor = Color.Black;
             buttonHeal.Location = new Point(236, 280);
             buttonHeal.Name = "buttonHeal";
             buttonHeal.Size = new Size(125, 86);
             buttonHeal.TabIndex = 22;
             buttonHeal.Text = "heal";
+            buttonHeal.TextAlign = ContentAlignment.BottomRight;
             buttonHeal.UseVisualStyleBackColor = true;
             buttonHeal.Click += buttonHeal_Click;
             // 
             // EnemyInfo2
             // 
+            EnemyInfo2.BackColor = Color.WhiteSmoke;
             EnemyInfo2.Location = new Point(584, 113);
             EnemyInfo2.Multiline = true;
             EnemyInfo2.Name = "EnemyInfo2";
@@ -233,6 +248,7 @@
             // 
             // EnemyInfo3
             // 
+            EnemyInfo3.BackColor = Color.WhiteSmoke;
             EnemyInfo3.Location = new Point(584, 192);
             EnemyInfo3.Multiline = true;
             EnemyInfo3.Name = "EnemyInfo3";
@@ -242,6 +258,7 @@
             // 
             // EnemyInfo4
             // 
+            EnemyInfo4.BackColor = Color.WhiteSmoke;
             EnemyInfo4.Location = new Point(584, 271);
             EnemyInfo4.Multiline = true;
             EnemyInfo4.Name = "EnemyInfo4";
@@ -251,6 +268,7 @@
             // 
             // EnemyInfo5
             // 
+            EnemyInfo5.BackColor = Color.WhiteSmoke;
             EnemyInfo5.Location = new Point(584, 350);
             EnemyInfo5.Multiline = true;
             EnemyInfo5.Name = "EnemyInfo5";
@@ -260,15 +278,18 @@
             // 
             // textboxTarget
             // 
+            textboxTarget.BackColor = Color.RosyBrown;
             textboxTarget.Enabled = false;
             textboxTarget.Location = new Point(12, 400);
             textboxTarget.Name = "textboxTarget";
             textboxTarget.Size = new Size(125, 23);
             textboxTarget.TabIndex = 27;
+            textboxTarget.Visible = false;
             // 
             // labelTarget
             // 
             labelTarget.AutoSize = true;
+            labelTarget.BackColor = SystemColors.ButtonFace;
             labelTarget.Location = new Point(12, 382);
             labelTarget.Name = "labelTarget";
             labelTarget.Size = new Size(39, 15);
@@ -278,13 +299,14 @@
             // 
             // buttonConfirmAttack
             // 
+            buttonConfirmAttack.BackColor = SystemColors.ButtonFace;
             buttonConfirmAttack.Enabled = false;
             buttonConfirmAttack.Location = new Point(143, 399);
             buttonConfirmAttack.Name = "buttonConfirmAttack";
             buttonConfirmAttack.Size = new Size(75, 23);
             buttonConfirmAttack.TabIndex = 29;
             buttonConfirmAttack.Text = "Confirm";
-            buttonConfirmAttack.UseVisualStyleBackColor = true;
+            buttonConfirmAttack.UseVisualStyleBackColor = false;
             buttonConfirmAttack.Visible = false;
             buttonConfirmAttack.Click += buttonConfirmAttack_Click;
             // 
@@ -292,6 +314,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(821, 449);
             Controls.Add(buttonConfirmAttack);
@@ -315,6 +338,7 @@
             Controls.Add(heroInfo);
             Controls.Add(EnemyInfo1);
             Controls.Add(pictureGoblin1);
+            ForeColor = SystemColors.Desktop;
             Name = "Form2";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)pictureGoblin1).EndInit();

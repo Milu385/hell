@@ -66,7 +66,6 @@ namespace hell
         private void buttonPlayAgain_Click(object sender, EventArgs e)
         {
 
-
             Combatsystem combatsystem = new Combatsystem();
 
             Form2 form2 = new Form2(combatsystem, character);
