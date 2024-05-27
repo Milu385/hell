@@ -9,7 +9,7 @@ namespace entregable1
 {
     public class Character
     {
-        private double life = 50;
+        private double life = 100;
 
         public string name;
 

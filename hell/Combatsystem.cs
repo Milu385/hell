@@ -27,7 +27,7 @@ namespace entregable1
         public Combatsystem()
         {
 
-            long num = random.NextInt64(1, 2); 
+            long num = random.NextInt64(1, 6); 
 
             Enemies = new List<Ienemies>();
 

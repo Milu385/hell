@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             buttonEquip = new Button();
             buttonDiscard = new Button();
             textBoxReward = new TextBox();
@@ -36,53 +37,76 @@
             // 
             // buttonEquip
             // 
-            buttonEquip.Location = new Point(12, 325);
+            buttonEquip.BackgroundImage = (Image)resources.GetObject("buttonEquip.BackgroundImage");
+            buttonEquip.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonEquip.FlatStyle = FlatStyle.Popup;
+            buttonEquip.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonEquip.ForeColor = SystemColors.ActiveCaptionText;
+            buttonEquip.Location = new Point(16, 286);
+            buttonEquip.Margin = new Padding(3, 2, 3, 2);
             buttonEquip.Name = "buttonEquip";
-            buttonEquip.Size = new Size(131, 80);
+            buttonEquip.Size = new Size(115, 60);
             buttonEquip.TabIndex = 0;
             buttonEquip.Text = "Equip";
+            buttonEquip.TextAlign = ContentAlignment.BottomRight;
             buttonEquip.UseVisualStyleBackColor = true;
             buttonEquip.Click += buttonEquip_Click;
             // 
             // buttonDiscard
             // 
-            buttonDiscard.Location = new Point(174, 325);
+            buttonDiscard.BackgroundImage = (Image)resources.GetObject("buttonDiscard.BackgroundImage");
+            buttonDiscard.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDiscard.FlatStyle = FlatStyle.Popup;
+            buttonDiscard.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonDiscard.Location = new Point(153, 286);
+            buttonDiscard.Margin = new Padding(3, 2, 3, 2);
             buttonDiscard.Name = "buttonDiscard";
-            buttonDiscard.Size = new Size(131, 80);
+            buttonDiscard.Size = new Size(115, 60);
             buttonDiscard.TabIndex = 1;
             buttonDiscard.Text = "Discard";
+            buttonDiscard.TextAlign = ContentAlignment.BottomRight;
             buttonDiscard.UseVisualStyleBackColor = true;
             buttonDiscard.Click += buttonDiscard_Click;
             // 
             // textBoxReward
             // 
-            textBoxReward.Location = new Point(18, 92);
+            textBoxReward.Location = new Point(16, 111);
+            textBoxReward.Margin = new Padding(3, 2, 3, 2);
             textBoxReward.Multiline = true;
             textBoxReward.Name = "textBoxReward";
             textBoxReward.ReadOnly = true;
-            textBoxReward.Size = new Size(287, 128);
+            textBoxReward.Size = new Size(252, 97);
             textBoxReward.TabIndex = 2;
             // 
             // buttonPlayAgain
             // 
+            buttonPlayAgain.BackgroundImage = (Image)resources.GetObject("buttonPlayAgain.BackgroundImage");
+            buttonPlayAgain.BackgroundImageLayout = ImageLayout.Stretch;
             buttonPlayAgain.Enabled = false;
-            buttonPlayAgain.Location = new Point(628, 325);
+            buttonPlayAgain.FlatStyle = FlatStyle.Popup;
+            buttonPlayAgain.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonPlayAgain.Location = new Point(547, 286);
+            buttonPlayAgain.Margin = new Padding(3, 2, 3, 2);
             buttonPlayAgain.Name = "buttonPlayAgain";
-            buttonPlayAgain.Size = new Size(131, 80);
+            buttonPlayAgain.Size = new Size(115, 60);
             buttonPlayAgain.TabIndex = 3;
             buttonPlayAgain.Text = "playAgain";
+            buttonPlayAgain.TextAlign = ContentAlignment.BottomRight;
             buttonPlayAgain.UseVisualStyleBackColor = true;
             buttonPlayAgain.Click += buttonPlayAgain_Click;
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(694, 372);
             Controls.Add(buttonPlayAgain);
             Controls.Add(textBoxReward);
             Controls.Add(buttonDiscard);
             Controls.Add(buttonEquip);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form3";
             Text = "Form3";
             ResumeLayout(false);
