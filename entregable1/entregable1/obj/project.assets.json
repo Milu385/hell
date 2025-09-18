@@ -8,24 +8,31 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/daniel/.nuget/packages/": {}
+    "C:\\Users\\milum\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/daniel/Documents/SOLID_project/entregable1/entregable1/entregable1.csproj",
+      "projectUniqueName": "C:\\Users\\milum\\Downloads\\hell\\entregable1\\entregable1\\entregable1.csproj",
       "projectName": "entregable1",
-      "projectPath": "/home/daniel/Documents/SOLID_project/entregable1/entregable1/entregable1.csproj",
-      "packagesPath": "/home/daniel/.nuget/packages/",
-      "outputPath": "/home/daniel/Documents/SOLID_project/entregable1/entregable1/obj/",
+      "projectPath": "C:\\Users\\milum\\Downloads\\hell\\entregable1\\entregable1\\entregable1.csproj",
+      "packagesPath": "C:\\Users\\milum\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\milum\\Downloads\\hell\\entregable1\\entregable1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/daniel/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\milum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -43,7 +50,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -64,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/daniel/.dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
